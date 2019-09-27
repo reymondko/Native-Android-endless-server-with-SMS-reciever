@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="ExtraText">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+        <Button
+                android:id="@+id/btnStartService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Foreground Service" android:paddingTop="20dp" android:layout_marginTop="20dp"/>
+
+        <Button
+                android:id="@+id/btnStopService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop Foreground Service"/>
+
+        <TextView
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/text_sms_send" />
+
+        <TextView
+                android:id="@+id/sms_sender_text_view"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="@string/text_sms_sender_number" />
+
+        <TextView
+                android:id="@+id/sms_message_text_view"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="@string/text_sms_message" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
